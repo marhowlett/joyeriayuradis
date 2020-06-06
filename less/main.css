@@ -152,6 +152,22 @@ div#fld_9541871_1-wrap {
   color: white;
   font-family: 'Aller' !important;
 }
+section.vc_section.mobile-bg-img-hidden.vc_custom_1510910949368.vc_section-has-fill.woodmart-bg-center-center {
+  position: relative;
+  top: 94px;
+}
+.vc_column-inner.vc_custom_1510669820683 {
+  margin-bottom: -94px;
+}
+@media screen and (max-height: 750px) {
+  section.vc_section.mobile-bg-img-hidden.vc_custom_1510910949368.vc_section-has-fill.woodmart-bg-center-center {
+    position: relative;
+    top: 66px;
+  }
+  .vc_column-inner.vc_custom_1510669820683 {
+    margin-bottom: -66px;
+  }
+}
 a.margende {
   margin-right: 20px;
 }
@@ -166,4 +182,19 @@ a.margende {
 #esbrillante a {
   font-family: 'Aller' !important;
   font-weight: bold;
+}
+.nav-shop {
+  /* display: none; */
+  visibility: hidden;
+}
+b.hechuras {
+  color: #c2a06e;
+  font-weight: normal!important;
+}
+@media screen and (max-width: 750px) {
+  .wpb_single_image.vc_align_right {
+    text-align: left;
+    position: relative;
+    top: 30px;
+  }
 }
