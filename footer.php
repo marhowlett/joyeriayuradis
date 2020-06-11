@@ -25,10 +25,35 @@
 	<?php endif ?>
 	
 	<!-- FOOTER -->
-	<?php include("templates/esbrillante.php"); ?>
+	<footer class="footer-container color-scheme-<?php echo esc_attr( woodmart_get_opt( 'footer-style' ) ); ?>">
+
+	
+		<?php if ( !$disable_copyrights_page && woodmart_get_opt( 'disable_copyrights' ) ): ?>
+			<div class="copyrights-wrapper copyrights-<?php echo esc_attr( woodmart_get_opt( 'copyrights-layout' ) ); ?>">
+				<div class="container">
+					<div class="min-footer">
+						<div class="col-left reset-mb-10">
+							<?php if ( woodmart_get_opt( 'copyrights' ) != '' ): ?>
+								<?php echo do_shortcode( woodmart_get_opt( 'copyrights' ) ); ?>
+							<?php else: ?>
+								
+							<?php endif ?>
+						</div>
+						<?php if ( woodmart_get_opt( 'copyrights2' ) != '' ): ?>
+							<div class="col-right reset-mb-10">
+								<?php echo do_shortcode( woodmart_get_opt( 'copyrights2' ) ); ?>
+							</div>
+						<?php endif ?>
+					</div>
+				</div>
+			</div>
+		<?php endif ?>
+<?php include("templates/esbrillante.php"); ?>
+	</footer>
 <?php endif ?>
 </div> <!-- end wrapper -->
 <div class="woodmart-close-side"></div>
+<?php do_action( 'woodmart_before_wp_footer' ); ?>
 <?php wp_footer(); ?>
 </body>
 </html>
