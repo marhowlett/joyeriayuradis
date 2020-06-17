@@ -184,6 +184,10 @@ a.margende {
   font-family: 'Aller' !important;
   font-weight: bold;
 }
+#esbrillante a.aviso {
+  position: relative;
+  left: 60px;
+}
 .nav-shop {
   /* display: none; */
   visibility: hidden;
@@ -192,7 +196,7 @@ b.hechuras {
   color: #c2a06e;
   font-weight: normal!important;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .wpb_single_image.vc_align_right {
     text-align: left;
     position: relative;
@@ -201,5 +205,19 @@ b.hechuras {
   h1.slider {
     font-size: 40px;
     line-height: 40px!important;
+  }
+  .header-banner-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  p.envio a {
+    position: relative;
+    right: 20px;
+    bottom: 2px;
+  }
+  #esbrillante a.aviso {
+    display: block;
+    position: relative;
+    left: 0px;
   }
 }
